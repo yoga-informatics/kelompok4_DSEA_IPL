@@ -1,31 +1,4 @@
-<?php  
-	//start the session
-	session_start();
 
-	$redirect = "";
-
-	if (isset($_SESSION['is_data_student_exist'])) {
-		$redirect = "<script> window.location='daftar_syarat.php'; </script>";
-	}else{
-		$redirect = "<script> window.location='daftar_data_orangtua.php'; </script>";
-	}
-
-	//check if button next is clicked
-	if(isset($_POST['submit'])){
-
-		//set all name attr and value to created variable
-		foreach ($_POST as $key => $val) {
-			${$key} = $val;
-			$_SESSION[''.$key.''] = $val;
-		}
-
-		//check if session is not empty, then redirect to daftar_data_orangtua.php
-		if (!empty($_SESSION)) {
-			echo $redirect;
-			print_r($_SESSION);
-		}
-	}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
 	
@@ -16,13 +14,9 @@
 <body>
     <div class="wrapper">
         <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
-            <!--
-                Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-                Tip 2: you can also add an image using data-image tag
-            -->
+          
             <div class="logo">
-                <a href="http://www.anggitprayogo.com" class="simple-text">
+                <a href="http://www.yoga.com" class="simple-text">
                     Selamat datang <?php $role == "Admin" ? print($nama_admin) : print($nama_panggilan); ?>
                 </a>
             </div>
