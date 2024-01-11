@@ -3,7 +3,7 @@
 error_reporting(0);
 
 //Database Configuration
-$db_name 	= "pendaftaran_ta";
+$db_name 	= "cobain";
 $host		= "localhost";
 $username	= "root";
 $password	= "";
